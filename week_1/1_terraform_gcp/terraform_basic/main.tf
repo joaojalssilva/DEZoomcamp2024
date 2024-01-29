@@ -9,8 +9,8 @@ terraform {
 
 provider "google" {
   # Credentials only needs to be set if you do not have the GOOGLE_APPLICATION_CREDENTIALS set
-  project     = "fine-rookery-412515"
-  region      = "eu-west"
+  project = "fine-rookery-412515"
+  region  = "EUROPE-WEST1"
 }
 
 
@@ -39,4 +39,8 @@ resource "google_storage_bucket" "demo-bucket" {
   force_destroy = true
 }
 
-
+resource "google_bigquery_dataset" "demo_dataset" {
+  dataset_id = "demo_dataset"
+  project    = "fine-rookery-412515"
+  location   = "EU"
+}
