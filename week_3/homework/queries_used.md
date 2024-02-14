@@ -30,3 +30,8 @@ SELECT distinct (PUlocationID)
 FROM `fine-rookery-412515.ny_taxi.green_tripdata2022_non_partitioned`
 WHERE lpep_pickup_datetime BETWEEN '2022-06-01' and '2022-06-30'
 
+
+SELECT distinct (PUlocationID)
+FROM `fine-rookery-412515.ny_taxi.green_tripdata2022_partitioned_clustered`
+WHERE lpep_pickup_datetime BETWEEN '2022-06-01' and '2022-06-30'
+
