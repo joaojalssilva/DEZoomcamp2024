@@ -4,7 +4,7 @@ set -e
 TAXI_TYPE=$1 # "yellow"
 YEAR=$2 # 2020
 
-URL_PREFIX="https://github.com/DataTalksClub/nyc-tlc-data/releases/download"
+URL_PREFIX="https://github.com/DataTalksClub/nyc-tlc-data/releases/tag"
 
 for MONTH in {1..12}; do
   FMONTH=`printf "%02d" ${MONTH}`
